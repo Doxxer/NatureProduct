@@ -16,8 +16,8 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 ImportFoodAdditive.run_import()
 
 app = webapp2.WSGIApplication(
-    [
+    routes=[
         ('/', MainPageHandler),
         ('/gobo', GetProductInfoHandler),
-        ('/purge', Purge),
-    ], debug=True)
+        ('/purge', Purge)],
+    debug=True)
