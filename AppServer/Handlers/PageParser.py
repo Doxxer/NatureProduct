@@ -1,15 +1,16 @@
 from contextlib import closing
 from urllib2 import urlopen
-import re
 
 
 BASE_URL = "http://goodsmatrix.ru/goods/"
 
+
 def getPage(url):
     page = ""
-    with closing( urlopen(url) ) as url_object:
+    with closing(urlopen(url)) as url_object:
         page = url_object.read()
-	return page
+        return page
+
 
 def getProductData(product_id):
     try:
@@ -19,6 +20,3 @@ def getProductData(product_id):
 
     except:
         print "Exception"
-
-
-
