@@ -4,7 +4,6 @@ import jinja2
 import webapp2
 
 from Handlers.GetProductInfoHandler import GetProductInfoHandler
-
 from Handlers.MainPageHandler import MainPageHandler
 
 
