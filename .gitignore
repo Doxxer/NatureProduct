@@ -13,4 +13,4 @@
 cookies.*
 client_secrets*
 *.sln
-*/packages/ZXing.Net*
+ZXing.Net.0.14.0.0/
