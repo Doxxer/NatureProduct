@@ -1,0 +1,48 @@
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Assets\ApplicationIcon.png
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\NatureProduct.dll
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\NatureProduct.pdb
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\AppManifest.xaml
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\NatureProduct_Debug_AnyCPU.xap
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\App.g.cs
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\MainPage.g.cs
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\NatureProduct.g.resources
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\NatureProduct.Resources.AppResources.resources
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\NatureProduct.csproj.GenerateResource.Cache
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\NatureProduct.dll
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\NatureProduct.pdb
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\XapCacheFile.xml
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\ManualEnter.g.cs
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\Scan.g.cs
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\NatureProduct.csprojResolveAssemblyReference.cache
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.dll
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.pdb
+c:\users\katekate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\ApplicationIcon.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\NatureProduct.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\NatureProduct.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\AppManifest.xaml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\NatureProduct_Debug_AnyCPU.xap
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.xml
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.csprojResolveAssemblyReference.cache
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\App.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\MainPage.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\ManualEnter.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\Scan.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.g.resources
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.Resources.AppResources.resources
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.csproj.GenerateResource.Cache
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.dll
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.pdb
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\XapCacheFile.xml
