@@ -38,6 +38,7 @@ def get_all_food_additives():
             if value.find(':') != -1:
                 value = value[value.find(':') + 1:].strip()
             names = value.replace(',', ';').replace(')', ';').replace('(', ';').split(';')
+            names = [x.strip() for x in names]
         except AssertionError:
             raise ParseError
         else:
@@ -91,7 +92,7 @@ def run_import():
     Если база данных добавок была пуста, то запускается парсинг xml файла и запись всех сущностей в базу данных
 
     """
-    if FoodAdditive.all().count() == 0:
+    if not FoodAdditive.all().fetch(1):
         logging.info("import food additives to local database... ")
         for e in get_all_food_additives():
             assert isinstance(e, FoodAdditive)
