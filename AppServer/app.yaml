@@ -11,9 +11,6 @@ skip_files:
 - ^(.*/)?.*/RCS/.*
 - ^(.*/)?\..*
 
-#- url: .*
-#  script: main.app
-
 libraries:
 - name: webapp2
   version: latest

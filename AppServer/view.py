@@ -3,6 +3,8 @@ import os
 import jinja2
 import webapp2
 
+from Handlers.GetProductInfoHandler import GetProductInfoHandler
+
 from Handlers.MainPageHandler import MainPageHandler
 
 
@@ -12,5 +14,6 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 
 app = webapp2.WSGIApplication(
     [
-        ('/', MainPageHandler)
+        ('/', MainPageHandler),
+        ('/gobo', GetProductInfoHandler)
     ], debug=True)

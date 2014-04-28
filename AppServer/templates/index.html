@@ -4,15 +4,30 @@
 Nature Product
 {% endblock %}
 
+{% block header %}
+<script type="text/javascript" src="/static/js/ShowProductInfo.js">
+
+</script>
+{% endblock %}
+
+
 {% block body %}
 <div class="container">
     <div class="hero-unit">
         <h1>Натуре продугд</h1>
-
         <p>Я верстальщик от бога</p>
+        <div>
+            <input id="sendText" type="text" value="1234567"/>
+            <button id="buttonSend" class="btn btn-primary btn-large">
+                Send data
+            </button>
+        </div>
+        <div>
+            <span id="response"></span>
+        </div>
 
-        <p>The source code of this application is available at <a
-                href="https://github.com/Doxxer/NatureProduct">Github</a>.
+        <p>The source code of this application is available at
+            <a href="https://github.com/Doxxer/NatureProduct">Github</a>.
         </p>
     </div>
 </div>
