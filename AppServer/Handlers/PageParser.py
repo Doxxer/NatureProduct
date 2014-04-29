@@ -32,7 +32,7 @@ def getPageTest():
 
 
 #Parse data from html = urlopen(url).read()
-def parseProductData(html):
+def parseProductDataTest(html):
     result = []
 
     soup = BeautifulSoup(html)
@@ -50,7 +50,7 @@ def parseProductData(html):
 
 
 #Parse data from static html file
-def parseProductDataStatic(html):
+def parseProductData(html):
     result = []
 
     soup = BeautifulSoup(html)
@@ -63,7 +63,7 @@ def parseProductDataStatic(html):
 
     for elem in ingredient_table.findAll('a'):
         if elem.parent.name == 'td':
-            result.append(elem.get_text().strip())
+            result.append(unicode(elem.get_text().strip()))
 
     return result
 
@@ -77,7 +77,7 @@ def getProductData(product_id):
         logging.warning("Empty Result")
         return []
 
-    return parseProductDataStatic(html)
+    return parseProductData(html)
 
 
 if __name__ == "__main__":
