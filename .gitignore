@@ -13,4 +13,6 @@
 cookies.*
 client_secrets*
 *.sln
+obj/*
+Bin/*
 /NatureProduct/packages/ZXing.Net.0.14.0.0/
