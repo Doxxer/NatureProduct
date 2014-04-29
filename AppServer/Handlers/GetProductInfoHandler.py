@@ -1,8 +1,8 @@
 # coding=utf-8
 import json
+import logging
 
 from GetAdditiveInfo import get_additive
-
 from Handlers.BaseHandler import BaseHandler
 from PageParser import get_product_data
 
@@ -17,6 +17,8 @@ class GetProductInfoHandler(BaseHandler):
         return result
 
     def post(self):
+        logging.info(self.request)
+        logging.info(self.request.body)
         barcode = self.request.body
         if barcode.find('=') == -1:
             self.response.set_status(500)

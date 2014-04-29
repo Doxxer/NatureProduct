@@ -21,6 +21,8 @@ app = webapp2.WSGIApplication(
         ('/', MainPageHandler),
         ('/gobo', GetProductInfoHandlerStub),
         ('/gobolive', GetProductInfoHandler),
+        # ('/purge', Purge)
         ('/gete', GetAdditiveInfoHandler),
-        ('/purge', Purge)],
-    debug=True)
+
+    ],
+    debug=False)

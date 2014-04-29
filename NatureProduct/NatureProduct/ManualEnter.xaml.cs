@@ -47,5 +47,10 @@ namespace NatureProduct
             else if (ni == NetworkInterfaceType.None)
                 MessageBox.Show("None");
         }
+
+        private void HandleNumbers_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("The file will be saved here.", "File Save", MessageBoxButton.OKCancel);
+        }
     }
 }
