@@ -25,16 +25,15 @@ def get_product_data(barcode):
 
         return page
 
-
-    def parse_product_data(html):
+    def parse_product_data(page_content):
         result = []
 
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(page_content)
 
         ingredient_table = soup.find(id='ctl00_ContentPH_Ingredients_IngrDL')
 
         if ingredient_table is None:
-            logging.warning("There is no ingredients in " + html)
+            logging.warning("There is no ingredients in " + page_content)
             return []
 
         for elem in ingredient_table.findAll('a'):

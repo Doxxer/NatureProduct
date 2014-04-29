@@ -1,11 +1,9 @@
 # coding=utf-8
-import json
 import logging
 import urllib
 
-from Handlers.BaseHandler import BaseHandler
 from Model.FoodAdditive import FoodAdditive
-from PageParser import  get_product_data
+from PageParser import get_product_data
 
 
 def find_by_name(name):
@@ -37,32 +35,15 @@ def find_by_id(code):
     return result
 
 
-def getAdditiveList(bar_code):
+def get_additives_list(bar_code):
+    result = []
     for ingredient in get_product_data(bar_code):
         if ingredient.lower().startswith('e'):
             ingredient = ingredient[1:].strip()
             logging.info(ingredient)
 
-
-
-
-
-
-class GetAdditiveInfoHandler(BaseHandler):
-    def post(self):
-        request = self.request.body
-        if request.find('=') == -1:
-            self.response.set_status(500)
-
-        request = request.split('=')[1].strip()
-        if request.lower().startswith('e'):
-            request = request[1:].strip()
-
-        logging.info(request)
-
-        response = self.find_by_id(request)
-        if not response:
-            response = self.find_by_name(request)
-
-        self.response.set_status(200)
-        self.response.write(json.dumps(response, ensure_ascii=False))
+        additive = find_by_id(ingredient)
+        if not additive:
+            additive = find_by_name(ingredient)
+        if additive:
+            result.append(additive)
