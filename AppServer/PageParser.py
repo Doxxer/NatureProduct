@@ -55,13 +55,19 @@ def get_product_data(barcode):
             return ""
         return span_name.get_text().strip()
 
+    if barcode.strip().startswith('2'):
+        return "2", []
 
     url = BASE_URL + str(barcode) + ".html"
     content = get_page_content(url)
     if content == "":
         logging.warning("Empty Result")
-        return "", []
-    return get_name(content), parse_product_data(content)
+        return "1", []
+
+    name_result, ecomp = get_name(content), parse_product_data(content)
+    if not name_result:
+        return "3", []
+    return name_result, ecomp
 
 
 if __name__ == "__main__":
