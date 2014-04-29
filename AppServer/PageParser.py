@@ -39,7 +39,6 @@ def parse_product_data(html):
     for elem in ingredient_table.findAll('a'):
         if elem.parent.name == 'td':
             caption = elem.get_text().strip()
-            print caption.__class__
             result.append(caption)
 
     return result
