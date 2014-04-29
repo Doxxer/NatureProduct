@@ -32,20 +32,9 @@ namespace NatureProduct
             NavigationService.Navigate(new Uri("/Scan.xaml", UriKind.Relative));
         }
 
-        // Пример кода для построения локализованной панели ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Установка в качестве ApplicationBar страницы нового экземпляра ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
-
-        //    // Создание новой кнопки и установка текстового значения равным локализованной строке из AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
-
-        //    // Создание нового пункта меню с локализованной строкой из AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
+        private void Elist_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/ElistProduct.xaml", UriKind.Relative));
+        }       
     }
 }

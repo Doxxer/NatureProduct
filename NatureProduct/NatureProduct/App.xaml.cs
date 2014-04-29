@@ -7,6 +7,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using NatureProduct.Resources;
+using NatureProduct.NetworkConnect;
 
 namespace NatureProduct
 {
@@ -17,6 +18,7 @@ namespace NatureProduct
         /// </summary>
         /// <returns>Корневой кадр приложения телефона.</returns>
         public static PhoneApplicationFrame RootFrame { get; private set; }
+        public Good sharEObj { get; set; }
 
         /// <summary>
         /// Конструктор объекта приложения.

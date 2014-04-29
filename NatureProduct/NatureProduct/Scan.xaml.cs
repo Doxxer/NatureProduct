@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
 using Microsoft.Devices;
-using System.IO;
-using System.IO.IsolatedStorage;
-using Microsoft.Xna.Framework.Media;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
@@ -132,9 +124,21 @@ namespace NatureProduct
 
         void _bcReader_ResultFound(Result obj)
         {
-            VibrateController.Default.Start(TimeSpan.FromMilliseconds(100));
-            //Console.WriteLine(obj.Text);
-            NavigationService.Navigate(new Uri("/ManualEnter.xaml" + obj.Text, UriKind.Relative));            
+            //VibrateController.Default.Start(TimeSpan.FromMilliseconds(100));
+            //NavigationService.Navigate(new Uri("/ManualEnter.xaml?BarString=" + obj.Text, UriKind.Relative));
+            if (!obj.Text.Equals(tbBarcodeData.Text))
+            {
+                VibrateController.Default.Start(TimeSpan.FromMilliseconds(100));
+                tbBarcodeType.Text = obj.BarcodeFormat.ToString();
+                tbBarcodeData.Text = obj.Text;
+
+            }
+            MsgRound.Visibility = System.Windows.Visibility.Visible;
+            l.Visibility = System.Windows.Visibility.Visible;
+            r.Visibility = System.Windows.Visibility.Visible;
+            line.Visibility = System.Windows.Visibility.Collapsed;
+            //send requst
+            //NavigationService.Navigate(new Uri("/ElistProduct.xaml?ObjName=" + obj, UriKind.Relative));
         }
 
         private void ScanForBarcode()

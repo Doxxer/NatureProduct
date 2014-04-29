@@ -14,7 +14,7 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="0,2,0,-2" >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -22,15 +22,13 @@
 
         <!--TitlePanel содержит имя приложения и заголовок страницы-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="МОЕ ПРИЛОЖЕНИЕ" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="имя страницы" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text =" Enter numbers" Margin="0,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel – поместите здесь дополнительное содержимое-->
         <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Text="Enter a string below to be passed to Page 2"></TextBlock>
-            <TextBox x:Name="BarCodeNumbers"></TextBox>
-            <Button x:Name="HandleNumbers" Content="Handle"></Button>
+            <TextBox x:Name="BarCodeNumbers" Height="120"></TextBox>
+            <Button x:Name="HandleNumbers" Content="Handle" Click="HandleNumbers_Click" Height="134" />
         </StackPanel>
     </Grid>
 
