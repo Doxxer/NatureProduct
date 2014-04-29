@@ -5,6 +5,7 @@ from Model.FoodAdditive import FoodAdditive
 
 def get_additive(ingredient):
     def find_by_name(name):
+        name = name.strip()
         result = {}
         additive = FoodAdditive.all().filter("names = ", name).fetch(1)
         if additive:

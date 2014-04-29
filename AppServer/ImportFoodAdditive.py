@@ -38,7 +38,7 @@ def get_all_food_additives():
             if value.find(':') != -1:
                 value = value[value.find(':') + 1:].strip()
             names = value.replace(',', ';').replace(')', ';').replace('(', ';').split(';')
-            names = [x.strip() for x in names]
+            names = [x.lower().strip() for x in names]
         except AssertionError:
             raise ParseError
         else:

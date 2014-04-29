@@ -12,7 +12,7 @@ class GetAdditiveInfoHandler(BaseHandler):
     def find_by_name(name):
         name = urllib.unquote_plus(name).decode("utf-8")
         result = {}
-        additive = FoodAdditive.all().filter("names in ", [name]).fetch(10)
+        additive = FoodAdditive.all().filter("names = ", name).fetch(10)
         if additive:
             additive = additive[0]
             assert isinstance(additive, FoodAdditive)
