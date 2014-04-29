@@ -29,9 +29,9 @@ namespace NatureProduct
         {
             MessageBox.Show(BarCodeNumbers.Text);
             
-            Good ecompObj = GoodJson.deserializeGood(NetworkConnector.getRequest(BarCodeNumbers.Text));
+            NetworkHelper.getRequest(BarCodeNumbers.Text);
 
-            MessageBox.Show(ecompObj.name);
+            //MessageBox.Show(ecompObj.name);
             //handle sorry page
             //var obj = App.Current as App;
             //obj.sharEObj = ecompObj;
@@ -48,9 +48,6 @@ namespace NatureProduct
                 MessageBox.Show("None");
         }
 
-        private void HandleNumbers_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("The file will be saved here.", "File Save", MessageBoxButton.OKCancel);
-        }
+        
     }
 }
