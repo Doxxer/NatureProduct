@@ -23,7 +23,7 @@ def getPage(url):
 def getPageTest():
     page = ""
     try:
-        with open('static/coca_cola.html', 'r') as f:
+        with open('../static/coca_cola.html', 'r') as f:
             page = f.read()
     except IOError as e:
         print "I/O error({0}): {1}".format(e.errno, e.strerror)
@@ -63,7 +63,7 @@ def parseProductData(html):
 
     for elem in ingredient_table.findAll('a'):
         if elem.parent.name == 'td':
-            result.append(unicode(elem.get_text().strip()))
+            result.append(elem.get_text().strip())
 
     return result
 
@@ -73,13 +73,22 @@ def parseProductData(html):
 def getProductData(product_id):
     url = BASE_URL + str(product_id) + ".html"
     html = getPage(url)
+    #html = getPageTest()
     if html == "":
         logging.warning("Empty Result")
         return []
 
     return parseProductData(html)
 
+def checkStr(s):
+    if isinstance(s, str):
+        print "ordinary string"
+    elif isinstance(s, unicode):
+        print "unicode string"
+    else:
+        print "not a string"
 
 if __name__ == "__main__":
     for ingr in getProductData(4810206001901):
+        checkStr(ingr)
         print ingr
