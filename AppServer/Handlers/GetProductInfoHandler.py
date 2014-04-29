@@ -17,8 +17,8 @@ class GetProductInfoHandler(BaseHandler):
         return result
 
     def post(self):
-        logging.warning(self.request)
-        logging.warning(self.request.body)
+        logging.info(self.request)
+        logging.info(self.request.body)
         barcode = self.request.body
         if barcode.find('=') == -1:
             self.response.set_status(500)

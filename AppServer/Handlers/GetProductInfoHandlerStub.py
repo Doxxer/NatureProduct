@@ -16,8 +16,8 @@ class GetProductInfoHandlerStub(BaseHandler):
 
 
     def post(self):
-        logging.warning(self.request)
-        logging.warning(self.request.body)
+        logging.info(self.request)
+        logging.info(self.request.body)
         response = {'name': u"Тестовое имя товара", 'additives': self.getAdditives()}
         self.response.set_status(200)
         self.response.write(json.dumps(response, ensure_ascii=False))
