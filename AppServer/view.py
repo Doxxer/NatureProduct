@@ -3,8 +3,8 @@ import os
 import jinja2
 import webapp2
 from Handlers.GetAdditiveInfoHandler import GetAdditiveInfoHandler
-
 from Handlers.GetProductInfoHandler import GetProductInfoHandler
+from Handlers.GetProductInfoHandlerStub import GetProductInfoHandlerStub
 from Handlers.MainPageHandler import MainPageHandler
 from Handlers.Purge import Purge
 import ImportFoodAdditive
@@ -19,7 +19,8 @@ ImportFoodAdditive.run_import()
 app = webapp2.WSGIApplication(
     routes=[
         ('/', MainPageHandler),
-        ('/gobo', GetProductInfoHandler),
+        ('/gobo', GetProductInfoHandlerStub),
+        ('/gobolive', GetProductInfoHandler),
         ('/gete', GetAdditiveInfoHandler),
         ('/purge', Purge)],
     debug=True)

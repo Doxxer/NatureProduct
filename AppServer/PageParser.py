@@ -4,7 +4,7 @@ from urllib2 import urlopen, HTTPError, URLError
 import logging
 import re
 
-additive_reg =  re.compile(u'[еЕeE]\s{0,}([0-9]{3,4}[a-zA-Z]{0,1})', re.UNICODE)
+additive_reg = re.compile(u'[еЕeE]\s{0,}([0-9]{3,4}[a-zA-Z]{0,1})', re.UNICODE)
 
 from bs4 import BeautifulSoup
 
@@ -13,7 +13,6 @@ BASE_URL = "http://goodsmatrix.ru/mobile/"
 
 
 def get_product_data(barcode):
-
     def get_page_content(url):
         page = ""
         try:
@@ -30,15 +29,12 @@ def get_product_data(barcode):
 
         return page
 
-    def parse_product_data_mobile(html):
+    def parse_product_data(page_content):
         result = []
-
-        soup = BeautifulSoup(html)
-
+        soup = BeautifulSoup(page_content)
         ingredient_table = soup.find(id='Composition')
-
         if ingredient_table is None:
-            logging.warning("There is no ingredients in " + html)
+            logging.warning("There is no ingredients")
             return []
 
         for elem in ingredient_table.get_text().split(','):
@@ -51,34 +47,25 @@ def get_product_data(barcode):
 
         return result
 
-
-    def parse_product_data(page_content):
-        result = []
-
+    def get_name(page_content):
         soup = BeautifulSoup(page_content)
+        span_name = soup.find(id='GoodsName')
+        if span_name is None:
+            logging.warning("There is no name")
+            return ""
+        return span_name.get_text().strip()
 
-        ingredient_table = soup.find(id='ctl00_ContentPH_Ingredients_IngrDL')
-
-        if ingredient_table is None:
-            logging.warning("There is no ingredients in " + page_content)
-            return []
-
-        for elem in ingredient_table.findAll('a'):
-            if elem.parent.name == 'td':
-                caption = elem.get_text().strip()
-                result.append(caption)
-
-        return result
 
     url = BASE_URL + str(barcode) + ".html"
-    html = get_page_content(url)
-    if html == "":
+    content = get_page_content(url)
+    if content == "":
         logging.warning("Empty Result")
-        return []
-    return parse_product_data_mobile(html)
-
+        return "", []
+    return get_name(content), parse_product_data(content)
 
 
 if __name__ == "__main__":
-    for ingr in get_product_data(4810206001901):
+    name, lst = get_product_data("4810206001901")
+    print name
+    for ingr in lst:
         print ingr

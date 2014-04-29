@@ -4,7 +4,7 @@ import json
 from Handlers.BaseHandler import BaseHandler
 
 
-class GetProductInfoHandler(BaseHandler):
+class GetProductInfoHandlerStub(BaseHandler):
     def getAdditives(self):
         result = []
         for i in range(5):
