@@ -132,8 +132,9 @@ namespace NatureProduct
 
         void _bcReader_ResultFound(Result obj)
         {
-            VibrateController.Default.Start(TimeSpan.FromMilliseconds(100));                
-            NavigationService.Navigate(new Uri("/ManualEnter.xaml", UriKind.Relative));            
+            VibrateController.Default.Start(TimeSpan.FromMilliseconds(100));
+            //Console.WriteLine(obj.Text);
+            NavigationService.Navigate(new Uri("/ManualEnter.xaml" + obj.Text, UriKind.Relative));            
         }
 
         private void ScanForBarcode()

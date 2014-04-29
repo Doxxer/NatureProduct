@@ -32,7 +32,6 @@ C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\NatureProduct.dll
 C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\NatureProduct.pdb
 C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\AppManifest.xaml
 C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\NatureProduct_Debug_AnyCPU.xap
-C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.dll
 C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.pdb
 C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.xml
 C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.csprojResolveAssemblyReference.cache
