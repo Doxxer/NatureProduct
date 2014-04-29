@@ -7,7 +7,7 @@ from PageParser import get_product_data
 
 
 def find_by_name(name):
-    name = urllib.unquote_plus(name).decode("utf-8")
+    #name = urllib.unquote_plus(name).decode("utf-8")
     result = {}
     additive = FoodAdditive.all().filter("names in ", [name]).fetch(10)
     if additive:
@@ -22,6 +22,7 @@ def find_by_name(name):
 
 
 def find_by_id(code):
+
     result = {}
     additive = FoodAdditive.all().filter("id = ", code).fetch(1)
     if additive:
@@ -38,12 +39,20 @@ def find_by_id(code):
 def get_additives_list(bar_code):
     result = []
     for ingredient in get_product_data(bar_code):
-        if ingredient.lower().startswith('e'):
-            ingredient = ingredient[1:].strip()
-            logging.info(ingredient)
-
+        print "Ingredient"
+        print isinstance(ingredient, unicode)
+        logging.warning(ingredient)
         additive = find_by_id(ingredient)
+        additive = []
         if not additive:
             additive = find_by_name(ingredient)
+
         if additive:
             result.append(additive)
+    return result
+
+
+def TestAdditive():
+    for elem in get_additives_list(4810206001901):
+        print elem
+
