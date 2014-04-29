@@ -2,6 +2,7 @@ import os
 
 import jinja2
 import webapp2
+from Handlers.GetAdditiveInfoHandler import GetAdditiveInfoHandler
 
 from Handlers.GetProductInfoHandler import GetProductInfoHandler
 from Handlers.MainPageHandler import MainPageHandler
@@ -19,5 +20,6 @@ app = webapp2.WSGIApplication(
     routes=[
         ('/', MainPageHandler),
         ('/gobo', GetProductInfoHandler),
+        ('/gete', GetAdditiveInfoHandler),
         ('/purge', Purge)],
     debug=True)

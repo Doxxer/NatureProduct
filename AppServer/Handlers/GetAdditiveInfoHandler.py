@@ -7,7 +7,7 @@ from Handlers.BaseHandler import BaseHandler
 from Model.FoodAdditive import FoodAdditive
 
 
-class GetProductInfoHandler(BaseHandler):
+class GetAdditiveInfoHandler(BaseHandler):
     @staticmethod
     def find_by_name(name):
         name = urllib.unquote_plus(name).decode("utf-8")
