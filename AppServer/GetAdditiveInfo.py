@@ -5,7 +5,7 @@ import urllib
 
 from Handlers.BaseHandler import BaseHandler
 from Model.FoodAdditive import FoodAdditive
-from PageParser import  getProductData
+from PageParser import  get_product_data
 
 
 def find_by_name(name):
@@ -38,7 +38,7 @@ def find_by_id(code):
 
 
 def getAdditiveList(bar_code):
-    for ingredient in getProductData(bar_code):
+    for ingredient in get_product_data(bar_code):
         if ingredient.lower().startswith('e'):
             ingredient = ingredient[1:].strip()
             logging.info(ingredient)
