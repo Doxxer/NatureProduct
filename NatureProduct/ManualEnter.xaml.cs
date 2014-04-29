@@ -29,9 +29,9 @@ namespace NatureProduct
         {
             MessageBox.Show(BarCodeNumbers.Text);
             
-            Good ecompObj = GoodJson.deserializeGood(NetworkConnector.getRequest(BarCodeNumbers.Text));
+            NetworkHelper.getRequest(BarCodeNumbers.Text);
 
-            MessageBox.Show(ecompObj.name);
+            //MessageBox.Show(ecompObj.name);
             //handle sorry page
             //var obj = App.Current as App;
             //obj.sharEObj = ecompObj;
@@ -47,5 +47,7 @@ namespace NatureProduct
             else if (ni == NetworkInterfaceType.None)
                 MessageBox.Show("None");
         }
+
+        
     }
 }

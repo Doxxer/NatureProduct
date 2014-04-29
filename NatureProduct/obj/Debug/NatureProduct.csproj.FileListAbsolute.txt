@@ -52,4 +52,105 @@ C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProd
 C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\ru\System.Windows.Interactivity.resources.dll
 C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
-C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\obj\Debug\Page1.g.cs
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.BackgroundAgentTools.dll
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Behaviors.dll
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Chart.dll
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Data.dll
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.DataVisualization.dll
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.ImageEditor.dll
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Data.dll
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.BackgroundAgentTools.pdb
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.BackgroundAgentTools.xml
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Behaviors.pdb
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Behaviors.xml
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Chart.pdb
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Chart.xml
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Data.pdb
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Data.xml
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.DataVisualization.pdb
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.DataVisualization.xml
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.ImageEditor.pdb
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.ImageEditor.xml
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Data.pdb
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Data.xml
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\de-DE\Telerik.Windows.Controls.ImageEditor.resources.dll
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\fr-FR\Telerik.Windows.Controls.ImageEditor.resources.dll
+C:\Users\KateKate\documents\visual studio 2012\Projects\NatureProduct\NatureProduct\Bin\Debug\it-IT\Telerik.Windows.Controls.ImageEditor.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.csprojResolveAssemblyReference.cache
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\App.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\ElistProduct.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\MainPage.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\ManualEnter.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\Scan.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\SorryPage.g.cs
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.g.resources
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.Resources.AppResources.resources
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.csproj.GenerateResource.Cache
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.dll
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\NatureProduct.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\ApplicationIcon.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\NatureProduct.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\NatureProduct.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\AppManifest.xaml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\NatureProduct_Debug_AnyCPU.xap
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Microsoft.Expression.Drawing.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.BackgroundAgentTools.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Behaviors.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Chart.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Data.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.DataVisualization.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.ImageEditor.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Input.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Primitives.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Core.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Data.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\System.Windows.Interactivity.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.BackgroundAgentTools.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.BackgroundAgentTools.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Behaviors.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Behaviors.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Chart.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Chart.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Data.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Data.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.DataVisualization.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.DataVisualization.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.ImageEditor.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.ImageEditor.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Input.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Input.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Primitives.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Controls.Primitives.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Core.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Core.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Data.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\Telerik.Windows.Data.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.pdb
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zxing.wp7.1.xml
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\de-DE\Telerik.Windows.Controls.ImageEditor.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\fr-FR\Telerik.Windows.Controls.ImageEditor.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\it-IT\Telerik.Windows.Controls.ImageEditor.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\de-DE\Telerik.Windows.Controls.Input.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\fr-FR\Telerik.Windows.Controls.Input.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\it-IT\Telerik.Windows.Controls.Input.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\de-DE\Telerik.Windows.Controls.Primitives.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\fr-FR\Telerik.Windows.Controls.Primitives.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\it-IT\Telerik.Windows.Controls.Primitives.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\NatureProd\NatureProduct\NatureProduct\obj\Debug\XapCacheFile.xml

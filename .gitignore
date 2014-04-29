@@ -1,3 +1,5 @@
+Bin/*
+obj/
 *.out
 *.o
 *.idea

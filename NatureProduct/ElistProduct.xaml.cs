@@ -17,6 +17,7 @@ namespace NatureProduct
     public partial class ElistProduct : PhoneApplicationPage
     {
         Dictionary<string, string> harmCategory;
+        Good ecompObj;
 
         private void createDict(){
             harmCategory = new Dictionary<string,string>();
@@ -30,18 +31,49 @@ namespace NatureProduct
         public ElistProduct()
         {
             InitializeComponent();
-            createDict();                     
+            createDict();
+
+            var obj = App.Current as App;
+            ecompObj = obj.sharEObj;
+            ProdName.Title = ecompObj.name;
         }
-       
+
+        string getColor(int severity) {
+            String color = "";
+            switch (severity)
+            {
+                case 1:
+                    color = harmCategory["safe"];
+                    break;
+                case 2:
+                    color = harmCategory["securesafe"];
+                    break;
+                case 3:
+                    color = harmCategory["condsafe"];
+                    break;
+                case 4:
+                    color = harmCategory["notsafe"];
+                    break;
+                case 5:
+                    color = harmCategory["harmful"];
+                    break;
+            }
+            return color;
+        }
         
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
-        {
-            
+        {        
 
             base.OnNavigatedTo(e);
+             
+            
             if (GroupedEList.ItemsSource == null)
             {
                 List<EName> source = new List<EName>();
+                ecompObj.additives.ForEach(delegate(EComponent eComp) { 
+                    String listName = string.Join(", ", eComp.names.ToArray());
+                    source.Add(new EName {Id = 1, NameE = eComp.id, Name = listName, Color = getColor(eComp.severity)});
+                });
                 source.Add(new EName() { Id = 1, NameE = "E123", Name = "кармин", Color = "#06F349" });
                 source.Add(new EName() { Id = 1, NameE = "E133", Name = "бензонат натрия", Color = "#FF0000" });
                 GroupedEList.ItemsSource = source;
@@ -49,7 +81,7 @@ namespace NatureProduct
 
             if (GroupedDescribeList.ItemsSource == null)
             {
-                List<DescribeCateg> source = new List<DescribeCateg>();
+                List<DescribeCateg> source = new List<DescribeCateg>();                
                 source.Add(new DescribeCateg() { Id = 1, Name = "Безопасна", Color = harmCategory["safe"] });
                 source.Add(new DescribeCateg() { Id = 2, Name = "небезопасна для определённой категории лиц", Color = harmCategory["securesafe"] });
                 source.Add(new DescribeCateg() { Id = 3, Name = "побочные явления не представляют угрозу жизни", Color = harmCategory["condsafe"] });
@@ -57,15 +89,15 @@ namespace NatureProduct
                 source.Add(new DescribeCateg() { Id = 5, Name = "запрещена", Color = harmCategory["harmful"] });
                 GroupedDescribeList.ItemsSource = source;
             }
-        }
-
-       
-
-        private void PhoneApplicationPage_Loaded_1(object sender, RoutedEventArgs e)
-        {
-            /*var obj = App.Current as App;
-            Good ecompObj = obj.sharEObj;
-            MessageBox.Show(ecompObj.name);*/
-        }
+            if (GroupedExtenList.ItemsSource == null) {
+                List<EExtenDescribe> source = new List<EExtenDescribe>();
+                ecompObj.additives.ForEach(delegate(EComponent eComp)
+                {
+                    String listName = string.Join(", ", eComp.names.ToArray());
+                    source.Add(new EExtenDescribe() { Id = 1, NameE = eComp.id, Describe = eComp.category + ". " + eComp.comment, Color = getColor(eComp.severity) });
+                });
+                source.Add(new EExtenDescribe() { Id = 1, NameE = "E123", Describe = "Describe", Color = harmCategory["safe"] });
+            }
+        }       
     }
 }

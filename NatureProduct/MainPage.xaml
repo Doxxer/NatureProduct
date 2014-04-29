@@ -23,52 +23,18 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- ПРИМЕЧАНИЕ О ЛОКАЛИЗАЦИИ:
-            Чтобы локализовать отображаемые строки, скопируйте их значения в соответствующим образом названные
-            ключи в файле ресурсов нейтрального языка приложения (AppResources.resx), а затем
-            замените жестко заданное текстовое значение между кавычками атрибутов
-            на выражение привязки, указывающее на имя соответствующей строки.
-
-            Пример:
-
-                Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
-
-            Данная привязка указывает на строковый ресурс шаблона с именем "ApplicationTitle".
-
-            Добавление поддерживаемых языков на вкладку "Свойства проекта" создает
-            новый RESX-файл для каждого языка, в котором могут храниться переведенные значения
-            строк пользовательского интерфейса. Привязка в этих примерах вызывает отрисовку
-            значений атрибутов из RESX-файла, соответствующего
-            CurrentUICulture приложения во время выполнения.
-         -->
-
         <!--TitlePanel содержит имя приложения и заголовок страницы-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Grid.RowSpan="2">
-            <TextBlock Text="МОЕ ПРИЛОЖЕНИЕ" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="Main Page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="2,17,10,28" Grid.RowSpan="2">
+            <TextBlock Text="Nature Product" Margin="3,-7,-15,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel — поместите здесь дополнительное содержимое-->
         <StackPanel x:Name="ContentPanеl" Grid.Row="1" Margin="14,21,10,63" Grid.RowSpan="2">
-            <StackPanel Orientation="Vertical">
-                <Button x:Name="EnterManually" Content="Enter Manually" Click="EnterManually_Click"/>
-                <Button x:Name="MakePhoto" Content="Make Photo" Click="MakePhoto_Click"/>
-                <Button x:Name="Elist" Content="Elist Test" Click="Elist_Click"/>
-            </StackPanel>
-            <Rectangle Fill="#FFF4F4F5" Height="18" Margin="79.744,0,294.965,0" Stroke="Black" StrokeThickness="20" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
-        		<Rectangle.RenderTransform>
-        			<CompositeTransform Rotation="45.936"/>
-        		</Rectangle.RenderTransform>
-        	</Rectangle>
+            <Button x:Name="EnterManually" Content="Enter Manually" Click="EnterManually_Click" Height="185" Margin="121,50,121,0"/>
+            <Button x:Name="MakePhoto" Content="Make Photo" Click="MakePhoto_Click" Height="178" Margin="121,0"/>
+            <Button x:Name="Elist" Content="Elist Test" Click="Elist_Click"/>
         </StackPanel>
 
-        <!--Раскомментируйте, чтобы увидеть сетку выравнивания и выровнять
-            элементы управления по общим границам.  Верхнее поле изображения равно -32 пикселя, чтобы
-            осталось место для области уведомлений. Установите его равным 0 (или вообще удалите поле),
-            если область уведомлений скрыта.
-
-            Перед сдачей приложения удалите этот код XAML и само изображение.-->
-        <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
-    </Grid>
+        </Grid>
 
 </phone:PhoneApplicationPage>

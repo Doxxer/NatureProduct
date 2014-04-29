@@ -11,19 +11,15 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded_1">
+    shell:SystemTray.IsVisible="False" >
 
-    <!--LayoutRoot содержит корневую сетку, где размещается все содержимое страницы-->
     <Grid x:Name="LayoutRoot">
-        <phone:Panorama Title="Prod Name" RenderTransformOrigin="0.498,0.472">
-            <!--Первый элемент Panorama-->            
-            <phone:LongListSelector Margin="-12,0,-50,0" x:Name="GroupedEList">
-                
+        <phone:Panorama x:Name="ProdName" Title="Prod Name" RenderTransformOrigin="0.498,0.472">
+            <phone:LongListSelector Margin="-12,0,-50,0" x:Name="GroupedEList">               
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="12,2,0,4" Height="105" Width="432">
-                            <!--Замените прямоугольник изображением-->
-                            <Border BorderThickness="1" Width="99" Height="99" BorderBrush="{Binding Color}" Background="{Binding Color}"/>
+                           <Border BorderThickness="1" Width="99" Height="99" BorderBrush="{Binding Color}" Background="{Binding Color}"/>
                             <StackPanel Width="311" Margin="8,-7,0,0">
                                 <TextBlock Text="{Binding NameE}" TextWrapping="Wrap" Margin="10,0" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeLarge}" />
                                 <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextSubtleStyle}" />
@@ -33,13 +29,11 @@
                 </phone:LongListSelector.ItemTemplate>
             </phone:LongListSelector>
         
-        <!--Второй элемент Panorama-->
-            <phone:LongListSelector x:Name="GroupedDescribeList" HorizontalAlignment="Right" Width="401" >
-               
+           <phone:LongListSelector x:Name="GroupedExtenList" HorizontalAlignment="Right" Width="401" >
+              
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="12,2,0,4" Height="105" Width="432">
-                            <!--Замените прямоугольник изображением-->
                             <Border BorderThickness="1" Width="99" Height="99" BorderBrush="{Binding Color}" Background="{Binding Color}"/>
                             <StackPanel Width="311" Margin="8,-7,0,0">
                                 <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Margin="10,30,10,0" Style="{StaticResource PhoneTextSubtleStyle}" />
@@ -48,7 +42,20 @@
                     </DataTemplate>
                 </phone:LongListSelector.ItemTemplate>
             </phone:LongListSelector>
-        </phone:Panorama>
-    </Grid>
+            
+            <phone:LongListSelector x:Name="GroupedDescribeList" HorizontalAlignment="Right" Width="401" >
 
+                <phone:LongListSelector.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Margin="12,2,0,4" Height="105" Width="432">
+                            <Border BorderThickness="1" Width="99" Height="99" BorderBrush="{Binding Color}" Background="{Binding Color}"/>
+                            <StackPanel Width="311" Margin="8,-7,0,0">
+                                <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Margin="10,30,10,0" Style="{StaticResource PhoneTextSubtleStyle}" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </phone:LongListSelector.ItemTemplate>
+            </phone:LongListSelector>
+        </phone:Panorama>        
+    </Grid>
 </phone:PhoneApplicationPage>
