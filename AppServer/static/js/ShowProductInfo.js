@@ -9,7 +9,7 @@ $(document).ready(function () {
             var ul = $('<ul>');
             switch (data.name) {
                 case '1':
-                    ul.append('<span>Ошибка ввода или сервер недоступен. Так или иначе, все очень плохо</span></p><img src=\'/static/img/duck.jpg\'>');
+                    ul.append('<span>Ошибка ввода или сервер недоступен. Так или иначе, все очень плохо</span></p><iframe width="420" height="315" src="//www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>');
                     break;
                 case '2':
                     ul.append('<span>Это весовой товар</span>');
