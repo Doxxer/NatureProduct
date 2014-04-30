@@ -34,14 +34,24 @@ namespace NetworkConnect
                     }
                 }
 
-                if (stores.Count() == MAX_LIMIT)
+                if (stores.Count() == 100)
+                {
+                    if (settingsStorage.Contains(stores[0]))
+                    {
+                        settingsStorage.Remove(stores[0]);
+                    }
+                    stores.RemoveAt(0);
+                }
+
+                if (stores.Contains(barCode))
                 {
                     if (settingsStorage.Contains(barCode))
                     {
                         settingsStorage.Remove(barCode);
                     }
-                    stores.RemoveAt(0);
+                    stores.Remove(barCode);
                 }
+
                 stores.Add(barCode);
                 using (StreamWriter sw = new StreamWriter(fileStorage.OpenFile("cache", FileMode.Open)))
                 {
