@@ -9,7 +9,7 @@ $(document).ready(function () {
             var ul = $('<ul>');
             ul.append('<li>Название товара: ' + data.name + '</li>');
             data.additives.sort(function (a, b) {
-                return a.severity > b.severity;
+                return a.severity - b.severity;
             });
             for (var i = 0; i < data.additives.length; i++) {
                 var additive = data.additives[i];
