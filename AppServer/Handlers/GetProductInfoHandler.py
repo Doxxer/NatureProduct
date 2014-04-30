@@ -29,4 +29,5 @@ class GetProductInfoHandler(BaseHandler):
 
         response = {'name': name, 'additives': self.getAdditives(ingredients)}
         self.response.set_status(200)
+        self.response.content_type = 'application/json'
         self.response.write(json.dumps(response, ensure_ascii=False))
