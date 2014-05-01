@@ -1,5 +1,6 @@
-Bin/*
-obj/
+/NatureProduct/Bin/
+/NatureProduct/obj/
+*.csproj
 *.out
 *.o
 *.idea
