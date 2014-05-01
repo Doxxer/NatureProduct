@@ -1,5 +1,6 @@
 /NatureProduct/Bin/
 /NatureProduct/obj/
+.nuget/
 *.csproj
 *.out
 *.o
