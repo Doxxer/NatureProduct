@@ -1,0 +1,72 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:es="clr-namespace:Microsoft.Expression.Shapes;assembly=Microsoft.Expression.Drawing"
+    x:Class="NatureProduct.Scan"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="0,0,0,72">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+
+        <Canvas x:Name="viewfinderCanvas" Grid.RowSpan="2" Margin="0,10,0,-126" Grid.ColumnSpan="2">
+
+            <!--Camera viewfinder -->
+            <Canvas.Background>
+
+                <VideoBrush x:Name="viewfinderBrush">
+                    <VideoBrush.RelativeTransform>
+                        <CompositeTransform
+                        x:Name="viewfinderTransform"
+                        CenterX="0.5"
+                        CenterY="0.5"
+                        Rotation="90"/>
+                    </VideoBrush.RelativeTransform>
+                </VideoBrush>
+            </Canvas.Background>
+
+            <TextBlock 
+            x:Name="focusBrackets" 
+            Text="[   ]" 
+            FontSize="40"
+                
+            Visibility="Collapsed"/>
+        </Canvas>
+
+      
+
+        <Rectangle StrokeThickness ="0" Fill="#FFF4F4F5" Margin="0,23,0,-71" Stroke="Black" Opacity="0.5" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Rectangle  StrokeThickness ="0" Fill="#FFF4F4F5" Margin="0,0,0,448" Stroke="Black" Opacity="0.5" Grid.ColumnSpan="2"/>
+        <Rectangle x:Name="line" StrokeThickness ="0" Fill="#FF0000" Margin="240,148,65,77" Stroke="Black" Opacity="1" Grid.RowSpan="2"/>
+        <Button x:Name="Ok" Visibility="Collapsed" BorderThickness ="0" Margin="164.543,285.497,152.463,162.503"  Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="90.031"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush   Opacity="0.5" ImageSource="Static/okicon.png"/>
+            </Button.Background>
+        </Button>
+
+        <StackPanel Grid.Row="1" Margin="20, 0">
+            <TextBlock x:Name="tbBarcodeType" FontWeight="ExtraBold" />
+            <TextBlock x:Name="tbBarcodeData" FontWeight="ExtraBold" TextWrapping="Wrap" />
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

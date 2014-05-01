@@ -1,0 +1,41 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="NatureProduct.SorryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel содержит имя приложения и заголовок страницы-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Sorry" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel – поместите здесь дополнительное содержимое-->
+        <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock Text="Упс. произошла ошибка"></TextBlock>
+            <TextBlock TextWrapping="Wrap" x:Name="ErrorMsg" Height="88"/>
+
+        </StackPanel>
+        <Button BorderThickness ="0" Margin="-14,522,345,-16" Grid.Row="1" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush   Opacity="0.5" ImageSource="Static/backicon.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+
+</phone:PhoneApplicationPage>
